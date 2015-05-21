@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		773A06E01B0E6BFC002BB2FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A06DF1B0E6BFC002BB2FB /* AppDelegate.swift */; };
-		773A06E21B0E6BFC002BB2FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A06E11B0E6BFC002BB2FB /* ViewController.swift */; };
+		773A06E21B0E6BFC002BB2FB /* PlaylistMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A06E11B0E6BFC002BB2FB /* PlaylistMasterViewController.swift */; };
 		773A06E51B0E6BFC002BB2FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773A06E31B0E6BFC002BB2FB /* Main.storyboard */; };
 		773A06E71B0E6BFC002BB2FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773A06E61B0E6BFC002BB2FB /* Images.xcassets */; };
 		773A06EA1B0E6BFC002BB2FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773A06E81B0E6BFC002BB2FB /* LaunchScreen.xib */; };
 		773A06F61B0E6BFC002BB2FB /* AlgorhythmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A06F51B0E6BFC002BB2FB /* AlgorhythmTests.swift */; };
+		773A07021B0E7012002BB2FB /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A07011B0E7012002BB2FB /* PlaylistDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		773A06DA1B0E6BFC002BB2FB /* Algorhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		773A06DE1B0E6BFC002BB2FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773A06DF1B0E6BFC002BB2FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		773A06E11B0E6BFC002BB2FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		773A06E11B0E6BFC002BB2FB /* PlaylistMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistMasterViewController.swift; sourceTree = "<group>"; };
 		773A06E41B0E6BFC002BB2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		773A06E61B0E6BFC002BB2FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		773A06E91B0E6BFC002BB2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		773A06EF1B0E6BFC002BB2FB /* AlgorhythmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorhythmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		773A06F41B0E6BFC002BB2FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773A06F51B0E6BFC002BB2FB /* AlgorhythmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorhythmTests.swift; sourceTree = "<group>"; };
+		773A07011B0E7012002BB2FB /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				773A06DF1B0E6BFC002BB2FB /* AppDelegate.swift */,
-				773A06E11B0E6BFC002BB2FB /* ViewController.swift */,
+				773A06E11B0E6BFC002BB2FB /* PlaylistMasterViewController.swift */,
+				773A07011B0E7012002BB2FB /* PlaylistDetailViewController.swift */,
 				773A06E31B0E6BFC002BB2FB /* Main.storyboard */,
 				773A06E61B0E6BFC002BB2FB /* Images.xcassets */,
 				773A06E81B0E6BFC002BB2FB /* LaunchScreen.xib */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				773A06E21B0E6BFC002BB2FB /* ViewController.swift in Sources */,
+				773A07021B0E7012002BB2FB /* PlaylistDetailViewController.swift in Sources */,
+				773A06E21B0E6BFC002BB2FB /* PlaylistMasterViewController.swift in Sources */,
 				773A06E01B0E6BFC002BB2FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
