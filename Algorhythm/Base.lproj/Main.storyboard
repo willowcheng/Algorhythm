@@ -16,14 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01D-Eg-Cxv">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="01D-Eg-Cxv">
                                 <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="7XA-Gm-aJF"/>
                                     <constraint firstAttribute="width" constant="200" id="7vn-dX-2FM"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65N-Ba-ASs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65N-Ba-ASs">
                                 <rect key="frame" x="137" y="392" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,10 +36,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="01D-Eg-Cxv" secondAttribute="centerY" id="22C-gO-Vo6"/>
-                            <constraint firstAttribute="centerY" secondItem="65N-Ba-ASs" secondAttribute="centerY" id="8Qn-Vv-2JS"/>
-                            <constraint firstAttribute="centerX" secondItem="01D-Eg-Cxv" secondAttribute="centerX" id="WwP-lS-QR2"/>
+                            <constraint firstAttribute="centerX" secondItem="65N-Ba-ASs" secondAttribute="centerX" id="MvJ-2s-0Wq"/>
+                            <constraint firstAttribute="centerX" secondItem="01D-Eg-Cxv" secondAttribute="centerX" id="S3z-Zc-WNh"/>
                             <constraint firstItem="65N-Ba-ASs" firstAttribute="top" secondItem="01D-Eg-Cxv" secondAttribute="bottom" constant="8" id="sop-KA-PPs"/>
+                            <constraint firstAttribute="centerY" secondItem="01D-Eg-Cxv" secondAttribute="centerY" id="yKu-cF-GJO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="nNM-0T-AUZ"/>
@@ -103,6 +104,9 @@
             <point key="canvasLocation" x="130" y="319"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coffee" width="53" height="107"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
