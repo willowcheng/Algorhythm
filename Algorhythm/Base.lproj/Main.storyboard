@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Wnl-tu-426">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Playlists-->
@@ -34,7 +35,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="65N-Ba-ASs" secondAttribute="centerX" id="MvJ-2s-0Wq"/>
                             <constraint firstAttribute="centerX" secondItem="01D-Eg-Cxv" secondAttribute="centerX" id="S3z-Zc-WNh"/>
@@ -64,23 +65,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zd4-ZF-RDN">
-                                <rect key="frame" x="40" y="273" width="240" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="cZg-ey-z9f">
+                                <rect key="frame" x="0.0" y="64" width="320" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cZg-ey-z9f" secondAttribute="height" multiplier="32:29" id="pbZ-T2-EAi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.33725490196078434" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Zd4-ZF-RDN" secondAttribute="centerX" id="5OZ-QH-5UF"/>
-                            <constraint firstAttribute="centerY" secondItem="Zd4-ZF-RDN" secondAttribute="centerY" id="evp-4z-oDW"/>
+                            <constraint firstAttribute="trailing" secondItem="cZg-ey-z9f" secondAttribute="trailing" id="dyE-Ok-Kp2"/>
+                            <constraint firstItem="cZg-ey-z9f" firstAttribute="leading" secondItem="3AB-Fc-I6I" secondAttribute="leading" id="oaz-oz-pYA"/>
+                            <constraint firstItem="cZg-ey-z9f" firstAttribute="top" secondItem="BlV-3H-eZj" secondAttribute="bottom" id="q3W-0o-WhR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="WE4-0Y-fNs"/>
-                    <connections>
-                        <outlet property="buttonPressLabel" destination="Zd4-ZF-RDN" id="2fP-dG-Qza"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TXL-dA-nPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,9 +90,11 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wnl-tu-426" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B1l-6m-7Jb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="B1l-6m-7Jb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
